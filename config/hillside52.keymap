@@ -57,7 +57,7 @@
  */
                         bindings = <
 &trans        &trans        &trans        &trans        &trans        &kp  C_MUTE                                                                    &kp   PG_UP   &kp  HOME     &kp   UP      &kp   END     &trans        &trans
-&kp  TAB      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHIFT   &kp  Undo                                                                      &kp   PG_DN   &kp  LEFT     &kp   DO      &kp   RIGHT   &trans        &kp ENTER
+&kp  TAB      &kp  A     &kp  S     &kp  D    &kp  F   &kp  Undo                                                                      &kp   PG_DN   &kp  LEFT     &kp   DO      &kp   RIGHT   &trans        &kp ENTER
 &kp  ESC      &kp  All      &kp  Paste    &kp  Cut      &kp  Copy     &kp  Redo     &kp  LGUI                                          &kp  RALT     &kp C_VOL_DN  &kp  C_VOL_UP &trans        &trans        &trans        &kp DEL
 &trans        &trans        &kp  LALT                   &kp  LCTRL    &kp  SPACE    &kp  LSHIFT     &trans               &mo  ADJ_L    &kp  RSHIFT   &kp  BSPC     &kp  RCTRL                  &kp  LALT     &trans        &trans
                         >;
