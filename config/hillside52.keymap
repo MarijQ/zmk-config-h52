@@ -58,7 +58,7 @@
                         bindings = <
 &trans        &trans        &kp  C_PREV   &kp  C_PP     &kp  C_NEXT   &kp  C_MUTE                                                                    &kp   PG_UP   &kp  HOME     &kp   UP      &kp   END     &trans        &trans
 &kp  TAB      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHFT    &kp  Undo                                                                      &kp   PG_DN   &kp  LEFT     &kp   DO      &kp   RIGHT   &trans        &kp ENTER
-&kp  ESC      &kp  All      &kp  Paste    &kp  Cut      &kp  Copy     &kp  Redo     &kp  LGUI                                          &kp  RALT     &kp C_VOL_DN  &kp  C_VOL_UP &kp C_BRI_DN  &kp  C_BRI_UP &trans        &kp DEL
+&kp  ESC      &kp  All      &kp  Paste    &kp  Cut      &kp  Copy     &kp  Redo     &kp  LGUI                                          &kp  RALT     &kp C_VOL_DN  &kp  C_VOL_UP &trans        &trans        &trans        &kp DEL
 &trans        &trans        &kp  LALT                   &kp  LCTRL    &kp  SPACE    &kp  LSHIFT     &trans               &mo  ADJ_L    &kp  RSHIFT   &kp  BSPC     &kp  RCTRL                  &kp  LALT     &trans        &trans
                         >;
 
