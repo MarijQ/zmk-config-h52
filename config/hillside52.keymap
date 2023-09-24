@@ -51,13 +51,13 @@
                 nav_layer {
 /* NAV
  * -------------------------------------------------------------------------------------------------------------------------------------
- * |       |       | PrevS | PlayP | NextS |  Mute |-----------------------------------| PGUP  | HOME  |  Up   |  END  |       |       |
+ * |       |       | PrevS | PlayP | NextS |  Mute |-----------------------------------| PGUP  | HOME  |  Up   |  END  |       |  BCK  |
  * | TAB   |  WIN  |  Alt  | Ctrl  | Shift |  ^Z   |-----------------------------------| PGDN  |  Left |  Down | Right |       | ENTER |
  * | ESC   |  ^A   |  ^V   |  ^X   |  ^C   |  ^Y   |  WIN  |-------------------| ALTGR | VOL_D | VOL_U | BRT_D | BRT_U |       |  DEL  |
  * |       |       |  ALT  |-------|  CTRL | SHIFT | SPACE |       |---| ADJ_L |  CBCK | SHIFT |  CTRL |-------|  ALT  | BACK  | FORW  |
  */
                         bindings = <
-&trans        &trans        &kp  C_PREV   &kp  C_PP     &kp  C_NEXT   &kp  C_MUTE                                                                    &kp   PG_UP   &kp  HOME     &kp   UP      &kp   END     &trans        &trans
+&trans        &trans        &kp  C_PREV   &kp  C_PP     &kp  C_NEXT   &kp  C_MUTE                                                                    &kp   PG_UP   &kp  HOME     &kp   UP      &kp   END     &trans        &kp BSPC
 &kp  TAB      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHIFT   &kp  Undo                                                                      &kp   PG_DN   &kp  LEFT     &kp   DOWN    &kp   RIGHT   &trans        &kp ENTER
 &kp  ESC      &kp  All      &kp  Paste    &kp  Cut      &kp  Copy     &kp  Redo     &kp  LGUI                                          &kp  RALT     &kp C_VOL_DN  &kp  C_VOL_UP &kp C_BRI_DN  &kp  C_BRI_UP &trans        &kp DEL
 &trans        &trans        &kp  LALT                   &kp  LCTRL    &kp  LSHIFT   &kp  SPACE      &trans               &mo  ADJ_L    &kp  CBack    &kp  RSHIFT   &kp  RCTRL                  &kp  LALT     &kp C_AC_BACK &kp C_AC_FORWARD
