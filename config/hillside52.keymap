@@ -32,16 +32,16 @@
                 default_layer {
 /* COLEMAK-DH
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | `     |   Q   |   W   |   F   |   P   |   B   |-----------------------------------|   J   |   L   |   U   |   Y   |   ;   | BKSPC |
+ * | CAPS  |   Q   |   W   |   F   |   P   |   B   |-----------------------------------|   J   |   L   |   U   |   Y   |   "   |   -   |
  * | TAB   |   A   |   R   |   S   |   T   |   G   |-----------------------------------|   M   |   N   |   E   |   I   |   O   | ENTER |
- * | SHIFT |   Z   |   X   |   C   |   D   |   V   |   '   |-------------------|   /   |   K   |   H   |   ,   |   .   |  Up   | SHIFT |
- * | Mute  |  ESC  | CTRL  |-------|  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |-------| Left  | Down  | Right |
+ * | ESC   |   Z   |   X   |   C   |   D   |   V   |  WIN  |-------------------| ALTGR |   K   |   H   |   ,   |   .   |   /   |  DEL  |
+ * | #     |   &   |  ALT  |-------|  CTRL | SPACE | SHIFT |  Nav  |---|  Sym  | SHIFT |  BCK  |  CTRL |-------|  ALT  |   \   |   |   |
  */
                         bindings = <
-&kp  GRAVE    &kp  Q        &kp  W        &kp  F        &kp  P        &kp  B                                                                         &kp  J        &kp  L        &kp  U        &kp  Y        &kp  SEMI     &kp  BSPC
+&kp  CAPS     &kp  Q        &kp  W        &kp  F        &kp  P        &kp  B                                                                         &kp  J        &kp  L        &kp  U        &kp  Y        &kp  DQT      &kp  MINUS
 &kp  TAB      &kp  A        &kp  R        &kp  S        &kp  T        &kp  G                                                                         &kp  M        &kp  N        &kp  E        &kp  I        &kp  O        &kp  ENTER
-&kp  LSHFT    &kp  Z        &kp  X        &kp  C        &kp  D        &kp  V        &kp  SQT                                           &kp  SLASH    &kp  K        &kp  H        &kp  COMMA    &kp  DOT      &kp  UP       &kp  RSHFT
-&kp  C_MUTE   &kp  ESC      &kp  LCTRL                  &kp  LGUI     &kp  LALT     &sk  LSHIFT     &mo  NAV_L           &mo  SYM_L    &kp  SPACE    &kp  LALT     &kp  RGUI                   &kp  LEFT     &kp  DOWN     &kp  RIGHT
+&kp  ESC      &kp  Z        &kp  X        &kp  C        &kp  D        &kp  V        &kp  LGUI                                          &kp  RALT     &kp  K        &kp  H        &kp  COMMA    &kp  DOT      &kp  SLASH    &kp  DEL
+&kp  HASH     &kp  AMPS     &kp  LALT                   &kp  LCTRL    &kp  SPACE    &kp  LSHIFT     &mo  NAV_L           &mo  SYM_L    &kp  RSHIFT   &kp  BSPC     &kp  RCTRL                  &kp  LALT     &kp  BSLH     &kp  PIPE
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
