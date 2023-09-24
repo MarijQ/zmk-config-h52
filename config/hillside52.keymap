@@ -74,7 +74,7 @@
  * |   ~   |   `   |  ALT  |-------|  CTRL | SPACE | SHIFT | ADJ_L |---|       | SHIFT |  BCK  |  CTRL |-------|  ALT  |       |       |
  */
                         bindings = <
-&kp  PSCRN    &kp  AT       &kp  NUHS     &kp  DOLLAR   &kp  PERCENT  &kp  UNDER                                                                     &kp  PLUS     &kp  N7       &kp  N8       &kp  N9       &kp  STAR     &kp  MINUS
+&kp  PSCRN    &kp  AT       &kp  POUND    &kp  DOLLAR   &kp  PERCENT  &kp  UNDER                                                                     &kp  PLUS     &kp  N7       &kp  N8       &kp  N9       &kp  STAR     &kp  MINUS
 &kp  TAB      &kp  EXCL     &kp  SEMI     &kp  LBKT     &kp  LPAR     &kp  LBRC                                                                      &kp  DOT      &kp  N4       &kp  N5       &kp  N6       &kp  EQUAL    &kp  ENTER
 &kp  ESC      &kp  QMARK    &kp  COLON    &kp  RBKT     &kp  RPAR     &kp  RBRC     &kp  LGUI                                          &kp  RALT     &kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  SLASH    &kp  DEL
 &kp  TILDE    &kp  GRAVE    &kp  LALT                   &kp  LCTRL    &kp  SPACE    &kp  LSHIFT     &mo  ADJ_L           &trans        &kp  RSHIFT   &kp  BSPC     &kp  RCTRL                  &kp  LALT     &trans        &trans
