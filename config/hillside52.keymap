@@ -62,8 +62,8 @@
 &trans        &trans        &kp  LALT                   &kp  LCTRL    &kp  SPACE    &kp  LSHIFT     &trans               &mo  ADJ_L    &kp  RSHIFT   &kp  BSPC     &kp  RCTRL                  &kp  LALT     &kp C_AC_BACK &kp C_AC_FORWARD
                         >;
 
-                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
-                };f
+                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN C_BRI_UP C_BRI_DN C_AC_BACK C_AC_FORWARD>;
+                };
 
                 sym_layer {
 /* SYM
