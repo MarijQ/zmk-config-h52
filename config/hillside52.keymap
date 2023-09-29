@@ -26,8 +26,7 @@
 #define CBack  LC(BSPC)
 #define RDesk  LC(LG(RIGHT))
 #define LDesk  LC(LG(LEFT))
-#define Pound  LA(KP_N0 KP_N1)
-#define Euro   LA(KP_N0 KP_N2)
+#define Pound  LA(KP_N0)
 
 / {
         keymap {
@@ -98,7 +97,7 @@
                         bindings = <
 &kp  TAB      &trans        &kp  C_PREV   &kp  C_PP     &kp  C_NEXT   &kp  C_MUTE                                                                    &kp   PG_UP   &kp  HOME     &kp   UP      &kp   END        &kp  C_BRI_UP &kp DEL
 &kp  ESC      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHIFT   &kp  Undo                                                                      &kp   PG_DN   &kp  LEFT     &kp   DOWN    &kp   RIGHT      &kp C_BRI_DN  &kp ENTER
-&kp  Euro     &kp  All      &kp  Paste    &kp  Cut      &kp  Copy     &kp  Redo     &kp  LGUI                                          &kp  RALT     &kp C_VOL_DN  &kp  C_VOL_UP &kp C_AC_BACK &kp C_AC_FORWARD &kp LDesk     &kp RDesk
+&trans        &kp  All      &kp  Paste    &kp  Cut      &kp  Copy     &kp  Redo     &kp  LGUI                                          &kp  RALT     &kp C_VOL_DN  &kp  C_VOL_UP &kp C_AC_BACK &kp C_AC_FORWARD &kp LDesk     &kp RDesk
 &trans        &trans        &kp  LALT                   &kp  LCTRL    &kp  LSHIFT   &kp  SPACE      &trans               &mo  ADJ_L    &kp  BSPC     &kp  RSHIFT   &kp  RCTRL                  &kp  LALT        &trans        &trans
                         >;
 
