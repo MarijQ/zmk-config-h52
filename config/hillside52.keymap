@@ -26,31 +26,10 @@
 #define CBack  LC(BSPC)
 #define RDesk  LC(LG(RIGHT))
 #define LDesk  LC(LG(LEFT))
-
-ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
+#define Pound  LA(KP_N0 KP_N1)
+#define Euro   LA(KP_N0 KP_N2)
 
 / {
-        macros {
-            sym_pnd: sym_pnd {
-                wait-ms = <40>;
-                tap-ms = <40>;
-                bindings
-                    = <&macro_press   &kp LALT>
-                    , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>
-                    , <&macro_release &kp LALT>
-                    ;
-            };
-            sym_eur: sym_eur {
-                wait-ms = <40>;
-                tap-ms = <40>;
-                bindings
-                    = <&macro_press   &kp LALT>
-                    , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>
-                    , <&macro_release &kp LALT>
-                    ;
-            };
-        };
-
         keymap {
                 compatible = "zmk,keymap";
 
@@ -119,7 +98,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
                         bindings = <
 &kp  TAB      &trans        &kp  C_PREV   &kp  C_PP     &kp  C_NEXT   &kp  C_MUTE                                                                    &kp   PG_UP   &kp  HOME     &kp   UP      &kp   END        &kp  C_BRI_UP &kp DEL
 &kp  ESC      &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp  LSHIFT   &kp  Undo                                                                      &kp   PG_DN   &kp  LEFT     &kp   DOWN    &kp   RIGHT      &kp C_BRI_DN  &kp ENTER
-&trans        &kp  All      &kp  Paste    &kp  Cut      &kp  Copy     &kp  Redo     &kp  LGUI                                          &kp  RALT     &kp C_VOL_DN  &kp  C_VOL_UP &kp C_AC_BACK &kp C_AC_FORWARD &kp LDesk     &kp RDesk
+&kp  Euro     &kp  All      &kp  Paste    &kp  Cut      &kp  Copy     &kp  Redo     &kp  LGUI                                          &kp  RALT     &kp C_VOL_DN  &kp  C_VOL_UP &kp C_AC_BACK &kp C_AC_FORWARD &kp LDesk     &kp RDesk
 &trans        &trans        &kp  LALT                   &kp  LCTRL    &kp  LSHIFT   &kp  SPACE      &trans               &mo  ADJ_L    &kp  BSPC     &kp  RSHIFT   &kp  RCTRL                  &kp  LALT        &trans        &trans
                         >;
 
@@ -135,7 +114,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)
  * |   ~   |   `   |  ALT  |-------|  CTRL | SHIFT | SPACE | ADJ_L |---|       |  CBCK | SHIFT |  CTRL |-------|  ALT  |  CBCK | BSPC  |
  */
                         bindings = <
-&kp  TAB      &kp  AT       &euro_sign    &kp  DOLLAR   &kp  PERCENT  &kp  UNDER                                                                     &kp  PLUS     &kp  N7       &kp  N8       &kp  N9       &kp  STAR     &kp  DEL
+&kp  TAB      &kp  AT       &kp Pound     &kp  DOLLAR   &kp  PERCENT  &kp  UNDER                                                                     &kp  PLUS     &kp  N7       &kp  N8       &kp  N9       &kp  STAR     &kp  DEL
 &kp  ESC      &kp  EXCL     &kp  SEMI     &kp  LPAR     &kp  RPAR     &kp  LBRC                                                                      &kp  DOT      &kp  N4       &kp  N5       &kp  N6       &kp  EQUAL    &kp  ENTER
 &kp  PSCRN    &kp  QMARK    &kp  COLON    &kp  LBKT     &kp  RBKT     &kp  RBRC     &kp  LGUI                                          &kp  RALT     &kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  MINUS    &kp  SLASH
 &kp  TILDE    &kp  GRAVE    &kp  LALT                   &kp  LCTRL    &kp  LSHIFT   &kp  SPACE      &mo  ADJ_L           &trans        &kp  CBack    &kp  RSHIFT   &kp  RCTRL                  &kp  LALT     &kp  CBack    &kp  BSPC
