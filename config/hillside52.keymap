@@ -26,7 +26,6 @@
 #define CBack  LC(BSPC)
 #define RDesk  LC(LG(RIGHT))
 #define LDesk  LC(LG(LEFT))
-#define Pound  LA(KP_N0(KP_N1(KP_N6(KP_N3))))
 
 / {
         keymap {
@@ -91,7 +90,7 @@
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | TAB   |       | PrevS | PlayP | NextS |  Mute |-----------------------------------| PGUP  | HOME  |  Up   |  END  | BRT_U |  DEL  |
  * | ESC   |  WIN  |  Alt  | Ctrl  | Shift |  ^Z   |-----------------------------------| PGDN  |  Left |  Down | Right | BRT_D | ENTER |
- * | EURO  |  ^A   |  ^V   |  ^X   |  ^C   |  ^Y   |  WIN  |-------------------| ALTGR | VOL_D | VOL_U |  BACK | FORW  | LDesk | RDesk |
+ * |       |  ^A   |  ^V   |  ^X   |  ^C   |  ^Y   |  WIN  |-------------------| ALTGR | VOL_D | VOL_U |  BACK | FORW  | LDesk | RDesk |
  * |       |       |  ALT  |-------|  CTRL | SHIFT | SPACE |       |---| ADJ_L |  BCK  | SHIFT |  CTRL |-------|  ALT  |       |       |
  */
                         bindings = <
@@ -113,7 +112,7 @@
  * |   ~   |   `   |  ALT  |-------|  CTRL | SHIFT | SPACE | ADJ_L |---|       |  CBCK | SHIFT |  CTRL |-------|  ALT  |  CBCK | BSPC  |
  */
                         bindings = <
-&kp  TAB      &kp  AT       &kp Pound     &kp  DOLLAR   &kp  PERCENT  &kp  UNDER                                                                     &kp  PLUS     &kp  N7       &kp  N8       &kp  N9       &kp  STAR     &kp  DEL
+&kp  TAB      &kp  AT       &kp  NUHS     &kp  DOLLAR   &kp  PERCENT  &kp  UNDER                                                                     &kp  PLUS     &kp  N7       &kp  N8       &kp  N9       &kp  STAR     &kp  DEL
 &kp  ESC      &kp  EXCL     &kp  SEMI     &kp  LPAR     &kp  RPAR     &kp  LBRC                                                                      &kp  DOT      &kp  N4       &kp  N5       &kp  N6       &kp  EQUAL    &kp  ENTER
 &kp  PSCRN    &kp  QMARK    &kp  COLON    &kp  LBKT     &kp  RBKT     &kp  RBRC     &kp  LGUI                                          &kp  RALT     &kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  MINUS    &kp  SLASH
 &kp  TILDE    &kp  GRAVE    &kp  LALT                   &kp  LCTRL    &kp  LSHIFT   &kp  SPACE      &mo  ADJ_L           &trans        &kp  CBack    &kp  RSHIFT   &kp  RCTRL                  &kp  LALT     &kp  CBack    &kp  BSPC
