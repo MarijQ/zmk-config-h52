@@ -28,30 +28,27 @@
 #define LDesk  LC(LG(LEFT))
 
 / {
-    macros {
-        sym_pnd: sym_pnd {
-            label = "sym_pnd";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>
-                , <&macro_release &kp LALT>
-                ;
+        macros {
+            sym_pnd: sym_pnd {
+                wait-ms = <40>;
+                tap-ms = <40>;
+                bindings
+                    = <&macro_press   &kp LALT>
+                    , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>
+                    , <&macro_release &kp LALT>
+                    ;
+            };
+            sym_eur: sym_eur {
+                wait-ms = <40>;
+                tap-ms = <40>;
+                bindings
+                    = <&macro_press   &kp LALT>
+                    , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>
+                    , <&macro_release &kp LALT>
+                    ;
+            };
         };
-        sym_eur: sym_eur {
-            label = "sym_eur";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N8>
-                , <&macro_release &kp LALT>
-                ;
-        };
-    };
 
-    {
         keymap {
                 compatible = "zmk,keymap";
 
