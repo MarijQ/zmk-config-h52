@@ -133,7 +133,7 @@
  * |   ~   |   `   |  ALT  |-------|  CTRL | SHIFT | SPACE | ADJ_L |---|       |  CBCK | SHIFT |  CTRL |-------|  ALT  |  CBCK | BSPC  |
  */
                         bindings = <
-&kp  TAB      &kp  AT       &trans        &kp  DOLLAR   &kp  PERCENT  &kp  UNDER                                                                     &kp  PLUS     &kp  N7       &kp  N8       &kp  N9       &kp  STAR     &kp  DEL
+&kp  TAB      &kp  AT       &sym_pnd      &kp  DOLLAR   &kp  PERCENT  &kp  UNDER                                                                     &kp  PLUS     &kp  N7       &kp  N8       &kp  N9       &kp  STAR     &kp  DEL
 &kp  ESC      &kp  EXCL     &kp  SEMI     &kp  LPAR     &kp  RPAR     &kp  LBRC                                                                      &kp  DOT      &kp  N4       &kp  N5       &kp  N6       &kp  EQUAL    &kp  ENTER
 &kp  PSCRN    &kp  QMARK    &kp  COLON    &kp  LBKT     &kp  RBKT     &kp  RBRC     &kp  LGUI                                          &kp  RALT     &kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  MINUS    &kp  SLASH
 &kp  TILDE    &kp  GRAVE    &kp  LALT                   &kp  LCTRL    &kp  LSHIFT   &kp  SPACE      &mo  ADJ_L           &trans        &kp  CBack    &kp  RSHIFT   &kp  RCTRL                  &kp  LALT     &kp  CBack    &kp  BSPC
