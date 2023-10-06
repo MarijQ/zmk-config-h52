@@ -72,14 +72,14 @@
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | ESC   |   Q   |   W   |   F   |   P   |   B   |-----------------------------------|   J   |   L   |   U   |   Y   |   '   |  DEL  |
  * | TAB   |   A   |   R   |   S   |   T   |   G   |-----------------------------------|   M   |   N   |   E   |   I   |   O   | ENTER |
- * | 1     |   Z   |   X   |   C   |   D   |   V   | SPACE |-------------------| ALTGR |   K   |   H   |   ,   |   .   |   -   |   /   |
- * | 2     |   3   | RALT  |-------|  ALT  | CTRL  | SHIFT |Nav/SPC|---|  Sym  |  CBCK | SHIFT |  CTRL |-------|  ALT  |   |   |   \   |
+ * | 1     |   Z   |   X   |   C   |   D   |   V   | RALT  |-------------------| ALTGR |   K   |   H   |   ,   |   .   |   -   |   /   |
+ * | 2     |   3   |  ALT  |-------|  CTRL | SHIFT | SPACE | NAV_L |---|  Sym  |  CBCK | SHIFT |  CTRL |-------|  ALT  |   |   |   \   |
  */
                         bindings = <
 &kp  ESC      &kp  Q        &kp  W        &kp  F        &kp  P        &kp  B                                                                         &kp  J        &kp  L        &kp  U        &kp  Y        &kp  SQT      &kp  DEL
 &kp  TAB      &kp  A        &kp  R        &kp  S        &kp  T        &kp  G                                                                         &kp  M        &kp  N        &kp  E        &kp  I        &kp  O        &kp  ENTER
-&kp  N1       &kp  Z        &kp  X        &kp  C        &kp  D        &kp  V        &kp  SPACE                                         &kp  RALT     &kp  K        &kp  H        &kp  COMMA    &kp  DOT      &kp  MINUS    &kp  SLASH
-&kp  N2       &kp  N3       &kp  RALT                   &kp  LALT     &kp  LCTRL    &kp  LSHIFT     &lt  NAV_L SPACE     &mo  SYM_L    &kp  BSPC     &kp  RSHIFT   &kp  RCTRL                  &kp  LALT     &kp  PIPE     &kp  BSLH
+&kp  N1       &kp  Z        &kp  X        &kp  C        &kp  D        &kp  V        &kp  RALT                                          &kp  RALT     &kp  K        &kp  H        &kp  COMMA    &kp  DOT      &kp  MINUS    &kp  SLASH
+&kp  N2       &kp  N3       &kp  LALT                   &kp  LCTRL    &kp  LSHIFT   &kp  SPACE      &mo  NAV_L           &mo  SYM_L    &kp  BSPC     &kp  RSHIFT   &kp  RCTRL                  &kp  LALT     &kp  PIPE     &kp  BSLH
                         >;
 
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
