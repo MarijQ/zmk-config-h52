@@ -72,8 +72,8 @@
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | ESC   |   Q   |   W   |   F   |   P   |   B   |-----------------------------------|   J   |   L   |   U   |   Y   |   '   |  DEL  |
  * | TAB   |   A   |   R   |   S   |   T   |   G   |-----------------------------------|   M   |   N   |   E   |   I   |   O   | ENTER |
- * | 1     |   Z   |   X   |   C   |   D   |   V   | RALT  |-------------------| ALTGR |   K   |   H   |   ,   |   .   |   -   |   /   |
- * | 2     |   3   |  ALT  |-------|  CTRL | SHIFT | SPACE | NAV_L |---|  Sym  |  CBCK | SHIFT |  CTRL |-------|  ALT  |   |   |   \   |
+ * | F1    |   Z   |   X   |   C   |   D   |   V   | F5    |-------------------| ALTGR |   K   |   H   |   ,   |   .   |   -   |   /   |
+ * | F2    |   F3  |  ALT  |-------|  CTRL | SHIFT | SPACE | NAV_L |---|  Sym  |  CBCK | SHIFT |  CTRL |-------|  ALT  |   |   |   \   |
  */
                         bindings = <
 &kp  ESC      &kp  Q        &kp  W        &kp  F        &kp  P        &kp  B                                                                         &kp  J        &kp  L        &kp  U        &kp  Y        &kp  SQT      &kp  DEL
