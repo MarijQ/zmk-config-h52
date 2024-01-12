@@ -73,7 +73,7 @@
  * | ESC   |   Q   |   W   |   F   |   P   |   B   |-----------------------------------|   J   |   L   |   U   |   Y   |   '   |  DEL  |
  * | TAB   |   A   |   R   |   S   |   T   |   G   |-----------------------------------|   M   |   N   |   E   |   I   |   O   | ENTER |
  * |  1    |   Z   |   X   |   C   |   D   |   V   |  4    |-------------------| ALTGR |   K   |   H   |   ,   |   .   |   -   |   /   |
- * |  2    |    3  |  ALT  |-------|  CTRL | SHIFT | SPACE | NAV_L |---|  Sym  |  CBCK | SHIFT |  CTRL |-------|  ALT  |   |   |   \   |
+ * |  2    |   3   |  ALT  |-------|  CTRL | SHIFT | SPACE | NAV_L |---|  Sym  |  CBCK | SHIFT |  CTRL |-------|  ALT  |   |   |   \   |
  */
                         bindings = <
 &kp  ESC      &kp  Q        &kp  W        &kp  F        &kp  P        &kp  B                                                                         &kp  J        &kp  L        &kp  U        &kp  Y        &kp  SQT      &kp  DEL
