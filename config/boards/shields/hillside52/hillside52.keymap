@@ -24,7 +24,7 @@
 #define Redo   LC(Y)
 
 &sk {
-    release-after-ms = <500>;
+    release-after-ms = <200>;
     quick-release;
 };
 
