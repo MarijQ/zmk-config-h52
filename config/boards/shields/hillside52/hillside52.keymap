@@ -23,11 +23,6 @@
 #define Paste  LC(V)
 #define Redo   LC(Y)
 
-&sk {
-    release-after-ms = <200>;
-    quick-release;
-};
-
 / {
         keymap {
                 compatible = "zmk,keymap";

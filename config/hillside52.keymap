@@ -27,6 +27,11 @@
 #define RDesk  LC(LG(RIGHT))
 #define LDesk  LC(LG(LEFT))
 
+&sk {
+    release-after-ms = <200>;
+    quick-release;
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
