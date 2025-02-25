@@ -26,7 +26,8 @@
 #define CBack  LC(BSPC)
 #define RDesk  LC(LG(RIGHT))
 #define LDesk  LC(LG(LEFT))
-#define Euro   RA(KP_N4)
+#define Euro   RA(N4)
+#define PndSn  LS(N3)
 
 &sk {
     release-after-ms = <200>;
@@ -79,7 +80,7 @@
 &kp  ESC      &kp  HOME     &kp C_VOL_DN  &kp  C_VOL_UP &kp  C_PP     &kp  C_MUTE                                &kp  PLUS     &kp  N7       &kp  N8       &kp  N9       &kp  STAR     &kp  DEL
 &kp  TAB      &kp  END      &kp  LEFT     &kp  UP       &kp  RIGHT    &kp  PG_UP                                 &kp  DOT      &kp  N4       &kp  N5       &kp  N6       &kp  EQUAL    &kp  ENTER
 &kp  PSCRN    &kp  Cut      &kp  Copy     &kp  DOWN     &kp  Paste    &kp  PG_DN    &kp  LGUI      &kp  RALT     &kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  MINUS    &kp  SLASH
-&kp LDesk     &kp RDesk     &kp  LALT     &kp  LCTRL    &kp  LSHIFT   &kp  SPACE    &trans         &mo  ADJ_L    &kp  BSPC     &kp  RSHIFT   &kp  RCTRL    &kp  LALT     &kp  Undo     &kp  Redo
+&kp  LDesk    &kp  RDesk    &kp  LALT     &kp  LCTRL    &kp  LSHIFT   &kp  SPACE    &trans         &mo  ADJ_L    &kp  BSPC     &kp  RSHIFT   &kp  RCTRL    &kp  LALT     &kp  Undo     &kp  Redo
                         >;
 
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -88,7 +89,7 @@
                 sym_layer {
 
                         bindings = <
-&kp  ESC      &kp  AT       &kp  NUHS     &kp  DOLLAR   &kp  PERCENT  &kp  UNDER                                  &kp  F12      &kp  F7       &kp  F8       &kp  F9       &kp  C_BRI_UP  &kp  DEL
+&kp  ESC      &kp  AT       &kp  PndSn    &kp  DOLLAR   &kp  PERCENT  &kp  UNDER                                  &kp  F12      &kp  F7       &kp  F8       &kp  F9       &kp  C_BRI_UP  &kp  DEL
 &kp  TAB      &kp  EXCL     &kp  SEMI     &kp  LPAR     &kp  RPAR     &kp  LBRC                                   &kp  F11      &kp  F4       &kp  F5       &kp  F6       &kp  C_BRI_DN  &kp  ENTER
 &kp  Euro     &kp  QMARK    &kp  COLON    &kp  LBKT     &kp  RBKT     &kp  RBRC     &kp  LGUI      &kp  RALT      &kp  F10      &kp  F1       &kp  F2       &kp  F3       &kp  C_PREV    &kp  C_NEXT
 &kp  TILDE    &kp  GRAVE    &kp  LALT     &kp  LCTRL    &kp  LSHIFT   &kp  SPACE    &mo  ADJ_L     &trans         &kp  CBack    &kp  RSHIFT   &kp  RCTRL    &kp  LALT     &kp  C_AC_BACK &kp  C_AC_FORWARD
