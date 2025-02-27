@@ -43,11 +43,9 @@
                         bindings = <
 &kp  ESC      &kp  Q        &kp  W        &kp  F        &kp  P        &kp  B                                     &kp  J        &kp  L        &kp  U        &kp  Y        &kp  SQT      &kp  DEL
 &kp  TAB      &kp  A        &kp  R        &kp  S        &kp  T        &kp  G                                     &kp  M        &kp  N        &kp  E        &kp  I        &kp  O        &kp  ENTER
-&kp  CAPS     &kp  Z        &kp  X        &kp  C        &kp  D        &kp  V        &kp  LGUI      &kp  RALT     &kp  K        &kp  H        &kp  COMMA    &kp  DOT      &kp  MINUS    &kp  SLASH
+&kp  LGUI     &kp  Z        &kp  X        &kp  C        &kp  D        &kp  V        &kp  CAPS      &kp  RALT     &kp  K        &kp  H        &kp  COMMA    &kp  DOT      &kp  MINUS    &kp  SLASH
 &kp  HASH     &kp  AMPS     &kp  LALT     &kp  LCTRL    &sk  LSHIFT   &kp  SPACE    &mo  NAV_L     &mo  SYM_L    &kp  CBack    &sk  RSHIFT   &kp  RCTRL    &kp  LALT     &kp  PIPE     &kp  BSLH
                         >;
-
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
 
                 qwerty_layer {
@@ -55,11 +53,9 @@
                         bindings = <
 &kp  ESC      &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                     &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  DEL
 &kp  TAB      &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                     &kp  H        &kp  J        &kp  K        &kp  L        &kp  SQT      &kp  ENTER
-&kp  CAPS     &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  LGUI      &kp  RALT     &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  MINUS    &kp  SLASH
+&kp  LGUI     &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &kp  CAPS      &kp  RALT     &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  MINUS    &kp  SLASH
 &kp  HASH     &kp  AMPS     &kp  LALT     &kp  LCTRL    &sk  LSHIFT   &kp  SPACE    &mo  NAV_L     &mo  SYM_L    &kp  CBack    &sk  RSHIFT   &kp  RCTRL    &kp  LALT     &kp  PIPE     &kp  BSLH
                         >;
-
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
 
                 game_layer {
@@ -70,8 +66,6 @@
 &kp  N1       &kp  Z        &kp  X        &kp  C        &kp  D        &kp  V        &kp  N4        &kp  LGUI     &kp  K        &kp  H        &kp  COMMA    &kp  DOT      &kp  MINUS    &kp  SLASH
 &kp  N2       &kp  N3       &kp  LALT     &kp  LCTRL    &kp  LSHIFT   &kp  SPACE    &mo  NAV_L     &mo  SYM_L    &kp  BSPC     &kp  RSHIFT   &kp  RCTRL    &kp  LALT     &kp  PIPE     &kp  BSLH
                         >;
-
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
 
                 nav_layer {
@@ -79,11 +73,9 @@
                         bindings = <
 &kp  ESC      &kp  HOME     &kp C_VOL_DN  &kp  C_VOL_UP &kp  C_PP     &kp  C_MUTE                                &kp  PLUS     &kp  N7       &kp  N8       &kp  N9       &kp  STAR     &kp  DEL
 &kp  TAB      &kp  END      &kp  LEFT     &kp  UP       &kp  RIGHT    &kp  PG_UP                                 &kp  DOT      &kp  N4       &kp  N5       &kp  N6       &kp  EQUAL    &kp  ENTER
-&kp  PSCRN    &kp  Cut      &kp  Copy     &kp  DOWN     &kp  Paste    &kp  PG_DN    &kp  LGUI      &kp  RALT     &kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  MINUS    &kp  SLASH
+&kp  LGUI    &kp  Cut      &kp  Copy     &kp  DOWN     &kp  Paste    &kp  PG_DN    &kp  PSCRN     &kp  RALT     &kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  MINUS    &kp  SLASH
 &kp  LDesk    &kp  RDesk    &kp  LALT     &kp  LCTRL    &kp  LSHIFT   &kp  SPACE    &trans         &mo  ADJ_L    &kp  BSPC     &kp  RSHIFT   &kp  RCTRL    &kp  LALT     &kp  Undo     &kp  Redo
                         >;
-
-                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                 sym_layer {
@@ -91,11 +83,9 @@
                         bindings = <
 &kp  ESC      &kp  AT       &kp  PndSn    &kp  DOLLAR   &kp  PERCENT  &kp  UNDER                                  &kp  F12      &kp  F7       &kp  F8       &kp  F9       &kp  C_BRI_UP  &kp  DEL
 &kp  TAB      &kp  EXCL     &kp  SEMI     &kp  LPAR     &kp  RPAR     &kp  LBRC                                   &kp  F11      &kp  F4       &kp  F5       &kp  F6       &kp  C_BRI_DN  &kp  ENTER
-&kp  Euro     &kp  QMARK    &kp  COLON    &kp  LBKT     &kp  RBKT     &kp  RBRC     &kp  LGUI      &kp  RALT      &kp  F10      &kp  F1       &kp  F2       &kp  F3       &kp  C_PREV    &kp  C_NEXT
+&kp  LGUI     &kp  QMARK    &kp  COLON    &kp  LBKT     &kp  RBKT     &kp  RBRC     &kp  Euro      &kp  RALT      &kp  F10      &kp  F1       &kp  F2       &kp  F3       &kp  C_PREV    &kp  C_NEXT
 &kp  TILDE    &kp  GRAVE    &kp  LALT     &kp  LCTRL    &kp  LSHIFT   &kp  SPACE    &mo  ADJ_L     &trans         &kp  CBack    &kp  RSHIFT   &kp  RCTRL    &kp  LALT     &kp  C_AC_BACK &kp  C_AC_FORWARD
                         >;
-
-                        sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
 
                 adj_layer {
@@ -103,11 +93,9 @@
                         bindings = <
 &kp ESC       &trans        &bt  BT_CLR   &bootloader   &trans        &bt BT_SEL 0                                &to  COLEMK_L  &trans         &trans         &trans         &trans         &kp DEL
 &kp TAB       &trans        &out OUT_USB  &out OUT_BLE  &trans        &bt BT_SEL 1                                &to  QWERTY_L  &trans         &trans         &trans         &trans         &kp ENTER
-&trans        &trans        &trans        &trans        &trans        &bt BT_SEL 2  &kp LGUI       &none          &to  GAME_L    &trans         &trans         &trans         &trans         &trans
+&kp  LGUI     &trans        &trans        &trans        &trans        &bt BT_SEL 2  &kp LGUI       &trans         &to  GAME_L    &trans         &trans         &trans         &trans         &trans
 &trans        &trans        &kp  LALT     &kp  LCTRL    &kp  LSHIFT     &kp  SPACE  &trans         &trans         &kp  CBack     &kp  RSHIFT    &kp  RCTRL     &kp  LALT      &trans         &trans
                         >;
-
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
         };
 };
