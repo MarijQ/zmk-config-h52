@@ -66,9 +66,9 @@
                 sym_layer {
                         label = "SYM";
                         bindings = <
-&kp  ESC      &kp  EQUAL    &kp  PndSn    &kp  DOLLAR   &kp  SLASH    &kp  BSLH                                  &kp  F12      &kp  F7       &kp  F8       &kp  F9       &kp  C_BRI_UP &kp  DEL
-&kp  TAB      &kp  QMARK    &kp  COLON    &kp  LPAR     &kp  RPAR     &kp  AT                                    &kp  F11      &kp  F4       &kp  F5       &kp  F6       &kp  C_BRI_DN &kp  BSPC
-&kp  LGUI     &kp  EXCL     &kp  SEMI     &kp  LBKT     &kp  RBKT     &kp  HASH     &trans         &trans        &kp  F10      &kp  F1       &kp  F2       &kp  F3       &kp  CAPS     &kp  LALT
+&kp  ESC      &kp  EQUAL    &kp  PndSn    &kp  DOLLAR   &kp  SLASH    &kp  BSLH                                  &kp  SLASH    &kp  N7       &kp  N8       &kp  N9       &kp  STAR     &kp  DEL
+&kp  TAB      &kp  QMARK    &kp  COLON    &kp  LPAR     &kp  RPAR     &kp  AT                                    &kp  DOT      &kp  N4       &kp  N5       &kp  N6       &kp  PLUS     &kp  BSPC
+&kp  LGUI     &kp  EXCL     &kp  SEMI     &kp  LBKT     &kp  RBKT     &kp  HASH     &trans         &trans        &kp  N0       &kp  N1       &kp  N2       &kp  N3       &kp  MINUS    &kp  LALT
 &trans        &trans        &trans        &kp  LCTRL    &kp  LSHIFT   &kp  SPACE    &mo  ADJ_L     &trans        &kp  ENTER    &kp  RSHIFT   &kp  RCTRL    &trans        &trans        &trans
                         >;
                 };
@@ -76,10 +76,10 @@
                 adj_layer {
                         label = "ADJ";
                         bindings = <
-&trans        &trans        &trans        &kp  Euro     &kp  GRAVE    &kp  PIPE                                  &bt  BT_NXT   &trans        &trans           &trans        &trans        &trans
-&trans        &trans        &kp  AMPS     &kp  PERCENT  &kp  LBRC     &kp  RBRC                                  &to  COLEMK_L &trans        &trans           &trans        &trans        &trans
-&trans        &trans        &trans        &trans        &trans        &trans        &trans         &trans        &to  QWERTY_L &trans        &trans           &trans        &trans        &trans
-&trans        &trans        &trans        &trans        &trans        &trans        &trans         &trans        &out OUT_TOG  &sys_reset    &bt  BT_CLR_ALL  &trans        &trans        &trans
+&bt  BT_NXT   &trans        &trans        &kp  Euro     &kp  GRAVE    &kp  PIPE                                  &kp  F12      &kp  F7       &kp  F8       &kp  F9       &kp  C_BRI_UP &kp  DEL
+&to  COLEMK_L &trans        &kp  AMPS     &kp  PERCENT  &kp  LBRC     &kp  RBRC                                  &kp  F11      &kp  F4       &kp  F5       &kp  F6       &kp  C_BRI_DN &kp  BSPC
+&to  QWERTY_L &trans        &trans        &trans        &trans        &trans        &trans         &trans        &kp  F10      &kp  F1       &kp  F2       &kp  F3       &kp  CAPS     &kp  LALT
+&trans        &trans        &out OUT_TOG  &sys_reset    &bt  BT_CLR_ALL &trans        &trans         &trans        &trans        &trans        &trans        &trans        &trans        &trans
                         >;
                 };
 
