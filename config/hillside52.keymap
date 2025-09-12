@@ -78,8 +78,8 @@
                         bindings = <
 &bt  BT_SEL 0 &trans        &trans        &kp  Euro     &kp  GRAVE      &kp  PIPE                                  &kp  F12      &kp  F7       &kp  F8       &kp  F9       &kp  C_BRI_UP &kp  DEL
 &bt  BT_SEL 1 &trans        &kp  AMPS     &kp  PERCENT  &kp  LBRC       &kp  RBRC                                  &kp  F11      &kp  F4       &kp  F5       &kp  F6       &kp  C_BRI_DN &kp  BSPC
-&bt  BT_SEL 2 &trans        &trans        &trans        &trans          &trans        &trans         &trans        &kp  F10      &kp  F1       &kp  F2       &kp  F3       &kp  CAPS     &kp  LALT
-&trans        &trans        &out OUT_TOG  &sys_reset    &bt  BT_CLR_ALL &trans        &trans         &trans        &trans        &to  COLEMK_L &to  QWERTY_L &trans        &trans        &trans
+&bt  BT_SEL 2 &trans        &trans        &trans        &trans          &trans       &trans          &trans        &kp  F10      &kp  F1       &kp  F2       &kp  F3       &kp  CAPS     &kp  LALT
+&trans        &trans        &trans        &out OUT_TOG  &trans          &sys_reset   &bt  BT_CLR_ALL &trans        &to  COLEMK_L &to  QWERTY_L &trans        &trans        &trans        &trans
                         >;
                 };
 
@@ -89,7 +89,7 @@
 &kp  ESC      &kp  Q        &kp  W        &kp  E        &kp  R        &kp  T                                     &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P        &kp  DEL
 &kp  TAB      &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                     &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  CBack
 &kp  LGUI     &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &trans         &trans        &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  MINUS    &kp  LALT
-&trans        &trans        &trans        &kp  LCTRL    &kp  LSHIFT   &kp  SPACE    &mo  NAV_L     &mo  SYM_L    &kp  ENTER    &kp  RSHIFT   &kp  RCTRL    &trans        &trans        &trans
+&trans        &trans        &trans        &kp  LCTRL    &mo  NAV_L    &kp  LSHIFT   &kp  SPACE     &kp  ENTER    &kp  RSHIFT   &mo  SYM_L    &kp  RCTRL    &trans        &trans        &trans
                         >;
                 };
         };
