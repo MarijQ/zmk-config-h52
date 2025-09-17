@@ -16,6 +16,7 @@
 #define L3       2
 #define L4       3
 #define QWERTY_L 4
+#define GAME_L   5
 
 #define Undo   LC(Z)
 #define Cut    LC(X)
@@ -79,7 +80,7 @@
 &bt  BT_SEL 0 &trans        &trans        &kp  Euro     &kp  GRAVE      &kp  PIPE                                  &kp  F12      &kp  F7       &kp  F8       &kp  F9       &kp  C_BRI_UP &kp  DEL
 &bt  BT_SEL 1 &trans        &kp  AMPS     &kp  PERCENT  &kp  LBRC       &kp  RBRC                                  &kp  F11      &kp  F4       &kp  F5       &kp  F6       &kp  C_BRI_DN &kp  BSPC
 &bt  BT_SEL 2 &trans        &trans        &trans        &trans          &trans       &trans          &trans        &kp  F10      &kp  F1       &kp  F2       &kp  F3       &kp  CAPS     &kp  LALT
-&trans        &trans        &trans        &trans       &out OUT_TOG  &sys_reset      &bt  BT_CLR_ALL &to  COLEMK_L &to  QWERTY_L &trans        &trans        &trans        &trans        &trans        
+&trans        &trans        &trans        &trans       &out OUT_TOG  &sys_reset      &bt  BT_CLR_ALL &to  COLEMK_L &to  QWERTY_L &to  GAME_L &trans        &trans        &trans        &trans        
                         >;
                 };
 
@@ -90,6 +91,16 @@
 &kp  TAB      &kp  A        &kp  S        &kp  D        &kp  F        &kp  G                                     &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI     &kp  CBack
 &kp  LGUI     &kp  Z        &kp  X        &kp  C        &kp  V        &kp  B        &trans         &trans        &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &kp  MINUS    &kp  LALT
 &trans        &trans        &trans        &mo  L2       &kp  LSHIFT   &kp  SPACE    &kp  LCTRL     &kp  RCTRL    &kp  ENTER    &kp  RSHIFT   &mo  L3       &trans        &trans        &trans
+                        >;
+                };
+
+                game_layer {
+                        label = "GAME";
+                        bindings = <
+&kp  ESC      &kp  Q        &kp  W        &kp  F        &kp  P        &kp  B                                     &kp  J        &kp  L        &kp  U        &kp  Y        &kp  SQT      &kp  DEL
+&kp  TAB      &kp  A        &kp  R        &kp  S        &kp  T        &kp  G                                     &kp  M        &kp  N        &kp  E        &kp  I        &kp  O        &kp  CBack
+&kp  LGUI     &kp  Z        &kp  X        &kp  C        &kp  D        &kp  V        &trans         &trans        &kp  K        &kp  H        &kp  MINUS    &kp  DOT      &kp  COMMA    &kp  LALT
+&trans        &trans        &trans        &kp  LCTRL    &kp  LSHIFT   &kp  SPACE    &mo  L2        &kp  RCTRL    &kp  ENTER    &kp  RSHIFT   &mo  L3       &trans        &trans        &trans
                         >;
                 };
         };
